@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Privacy Policy";
+    
+    
+}
+<h1>@ViewData["Title"]</h1>
+
+
+@{
+    List<string> products = new List<string>()
+    {
+        "Iphone",
+        "Laptop",
+        "CPU"
+    };
+    
+    <h2>Danh sach san pham</h2>
+    <ul>
+        @foreach (var product in products)
+        {
+            <li>San Pham @product</li>
+        }
+    </ul>
+}
