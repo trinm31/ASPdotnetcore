@@ -6,10 +6,25 @@
 
 <h1>So tu controller la </h1>
 
-<ul>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>HomeTown</th>
+            <th>StudentFee</th>
+        </tr>
+    </thead>
+    <tbody>
     @foreach (var student in @Model)
-    {
-        <li>@student.Name</li>
-    }
-</ul>
+        {
+            <tr>
+                <td>@student.Name</td>
+                <td>@student.Age</td>
+                <td>@student.HomeTown</td>
+                <td>@student.StudentFee</td>
+            </tr>
+        }
+    </tbody>
+</table>
 
