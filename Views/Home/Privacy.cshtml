@@ -1,3 +1,5 @@
+@using ORM_EFcore;
+
 @{
     ViewData["Title"] = "Privacy Policy";
     
@@ -5,6 +7,16 @@
 }
 <h1>@ViewData["Title"]</h1>
 
+@functions
+{
+    string name;
+    int age;
+
+    String Wellcome()
+    {
+        return $"Xin chao {name}, ban {age}";
+    }
+}
 
 @{
     List<string> products = new List<string>()
@@ -14,7 +26,7 @@
         "CPU"
     };
     
-    <h2>Danh sach san pham</h2>
+    <h2>Danh sach san pham @Constant.Helloworld @Wellcome()</h2>
     <ul>
         @foreach (var product in products)
         {
@@ -22,3 +34,17 @@
         }
     </ul>
 }
+
+@{
+    var age = 13;
+}
+
+@if (age >= 15)
+{
+    <h1>Ban da du tuoi</h1>
+}
+else
+{
+    <h1>Ban chua du tuoi</h1>
+}
+
