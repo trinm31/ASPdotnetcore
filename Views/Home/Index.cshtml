@@ -10,9 +10,7 @@
     <thead>
         <tr>
             <th>Name</th>
-            <th>Age</th>
-            <th>HomeTown</th>
-            <th>StudentFee</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -20,9 +18,11 @@
         {
             <tr>
                 <td>@student.Name</td>
-                <td>@student.Age</td>
-                <td>@student.HomeTown</td>
-                <td>@student.StudentFee</td>
+                <td>
+                    <a asp-controller="Home" asp-action="Details" asp-route-StudentId="@student.StudentId" type="button" class="btn btn-primary">
+                        Button Of @student.Name
+                    </a>
+                </td>
             </tr>
         }
     </tbody>

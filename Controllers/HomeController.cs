@@ -24,7 +24,15 @@ namespace ORM_EFcore.Controllers
         public IActionResult Index()
         {
             var StudentList = _db.Students.ToList();
+            int a = 1;
+            int b = a;
             return View(StudentList);
+        }
+
+        public IActionResult Details(int StudentId)
+        {
+            var student = _db.Students.Where(s => s.StudentId == StudentId).FirstOrDefault();
+            return View(student);
         }
 
         public IActionResult Privacy()
