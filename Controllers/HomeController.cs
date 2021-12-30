@@ -34,7 +34,22 @@ namespace ORM_EFcore.Controllers
             var student = _db.Students.Where(s => s.StudentId == StudentId).FirstOrDefault();
             return View(student);
         }
+        
+        public IActionResult Test(int StudentId)
+        {
+            var student = _db.Students.Where(s => s.StudentId == StudentId).FirstOrDefault();
+            return View(student);
+        }
 
+
+        public IActionResult Delete(int id)
+        {
+            var student = _db.Students.Find(id);
+            _db.Students.Remove(student);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        
         public IActionResult Privacy()
         {
             return View();

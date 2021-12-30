@@ -1,0 +1,38 @@
+@model IEnumerable<ORM_EFcore.Models.Class>
+
+@{
+    Layout = "_Layout";
+}
+
+<div class="row">
+    <div class="col-6">
+        <h1>Student Table</h1>
+    </div>
+    <div class="col-6">
+        <a asp-controller="Class" asp-action="Create" class="btn btn-success">Create New Class</a>
+    </div>
+</div>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var obj in @Model)
+    {
+        <tr>
+            <th scope="row">@obj.Id</th>
+            <td>@obj.Name</td>
+            <td>@obj.Description</td>
+            <td>
+                <a asp-controller="Class" asp-action="Update" asp-route-id="@obj.Id" class="btn btn-warning">Update</a>
+                <a asp-controller="Class" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

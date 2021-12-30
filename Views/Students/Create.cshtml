@@ -1,0 +1,30 @@
+@model ORM_EFcore.Models.Student
+
+@{
+    Layout = "_Layout";
+}
+
+<h1>Create Student</h1>
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Age" class="form-label"></label>
+        <input asp-for="Age" class="form-control">
+        <span asp-validation-for="Age" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="HomeTown" class="form-label"></label>
+        <input asp-for="HomeTown" class="form-control">
+        <span asp-validation-for="HomeTown" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="StudentFee" class="form-label"></label>
+        <input asp-for="StudentFee" class="form-control">
+        <span asp-validation-for="StudentFee" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

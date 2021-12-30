@@ -1,0 +1,42 @@
+@model IEnumerable<ORM_EFcore.Models.Student>
+
+@{
+    Layout = "_Layout";
+}
+
+<div class="row">
+    <div class="col-6">
+        <h1>Student Table</h1>
+    </div>
+    <div class="col-6">
+        <a asp-controller="Students" asp-action="Create" class="btn btn-success">Create New Student</a>
+    </div>
+</div>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">HomeTown</th>
+        <th scope="col">StudentFee</th>
+        <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var student in @Model)
+    {
+        <tr>
+            <th scope="row">@student.StudentId</th>
+            <td>@student.Name</td>
+            <td>@student.Age</td>
+            <td>@student.HomeTown</td>
+            <td>@student.StudentFee</td>
+            <td>
+                <a asp-controller="Students" asp-action="Update" asp-route-id="@student.StudentId" class="btn btn-warning">Update</a>
+                <a asp-controller="Students" asp-action="Delete" asp-route-stuid="@student.StudentId" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

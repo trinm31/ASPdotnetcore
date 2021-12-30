@@ -23,6 +23,11 @@
                         Button Of @student.Name
                     </a>
                 </td>
+                <td>
+                    <a asp-controller="Home" asp-action="Test" asp-route-StudentId="@student.StudentId" type="button" class="btn btn-danger">
+                        Hello
+                    </a>
+                </td>
             </tr>
         }
     </tbody>

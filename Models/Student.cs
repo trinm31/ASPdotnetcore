@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -13,8 +14,10 @@ namespace ORM_EFcore.Models
         }
 
         public int StudentId { get; set; }
+        [Required]
         public string Name { get; set; }
         public int? Age { get; set; }
+        [Required]
         public string HomeTown { get; set; }
         public double StudentFee { get; set; }
 
