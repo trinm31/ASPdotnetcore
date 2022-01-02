@@ -1,0 +1,26 @@
+@model ORM_EFcore.ViewModels.ProductVM
+
+@{
+    Layout = "_Layout";
+}
+
+<h1>Update Category</h1>
+<form method="post">
+    <input asp-for="Product.Id" class="form-control" hidden>
+    <div class="mb-3">
+        <label asp-for="Product.Name" class="form-label"></label>
+        <input asp-for="Product.Name" class="form-control">
+        <span asp-validation-for="Product.Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Product.Price" class="form-label"></label>
+        <input asp-for="Product.Price" class="form-control">
+        <span asp-validation-for="Product.Price" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Product.CategoriId" class="form-label"></label>
+        @Html.DropDownListFor(m => m.Product.CategoriId, Model.CategoryList, "Please select category", new { @class = "form-control" })
+        <span asp-validation-for="Product.CategoriId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

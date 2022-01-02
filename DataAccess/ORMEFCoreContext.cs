@@ -22,6 +22,9 @@ namespace ORM_EFcore.DataAccess
         public virtual DbSet<Enrollment> Enrollments { get; set; }
         public virtual DbSet<Student> Students { get; set; }
         public virtual DbSet<Log> Logs { get; set; }
+        
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

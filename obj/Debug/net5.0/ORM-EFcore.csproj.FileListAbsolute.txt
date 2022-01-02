@@ -164,3 +164,12 @@
 /Users/nguyenminhtri/RiderProjects/ORM-EFcore/ORM-EFcore/obj/Debug/net5.0/Razor/Views/Class/Create.cshtml.g.cs
 /Users/nguyenminhtri/RiderProjects/ORM-EFcore/ORM-EFcore/obj/Debug/net5.0/Razor/Views/Class/Index.cshtml.g.cs
 /Users/nguyenminhtri/RiderProjects/ORM-EFcore/ORM-EFcore/obj/Debug/net5.0/Razor/Views/Class/Update.cshtml.g.cs
+/Users/nguyenminhtri/RiderProjects/ORM-EFcore/ORM-EFcore/obj/Debug/net5.0/Razor/Views/Categories/Create.cshtml.g.cs
+/Users/nguyenminhtri/RiderProjects/ORM-EFcore/ORM-EFcore/obj/Debug/net5.0/Razor/Views/Categories/Index.cshtml.g.cs
+/Users/nguyenminhtri/RiderProjects/ORM-EFcore/ORM-EFcore/obj/Debug/net5.0/Razor/Views/Categories/Update.cshtml.g.cs
+/Users/nguyenminhtri/RiderProjects/ORM-EFcore/ORM-EFcore/obj/Debug/net5.0/Razor/Views/Products/Create.cshtml.g.cs
+/Users/nguyenminhtri/RiderProjects/ORM-EFcore/ORM-EFcore/obj/Debug/net5.0/Razor/Views/Products/Index.cshtml.g.cs
+/Users/nguyenminhtri/RiderProjects/ORM-EFcore/ORM-EFcore/obj/Debug/net5.0/Razor/Views/Products/Edit.cshtml.g.cs
+/Users/nguyenminhtri/RiderProjects/ORM-EFcore/ORM-EFcore/obj/Debug/net5.0/Razor/Views/Categories/Upsert.cshtml.g.cs
+/Users/nguyenminhtri/RiderProjects/ORM-EFcore/ORM-EFcore/obj/Debug/net5.0/Razor/Views/Products/Upsert.cshtml.g.cs
+/Users/nguyenminhtri/RiderProjects/ORM-EFcore/ORM-EFcore/obj/Debug/net5.0/Razor/Views/Shared/_StatusMessage.cshtml.g.cs
